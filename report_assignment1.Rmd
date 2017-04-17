@@ -1,0 +1,46 @@
+---
+title: "report_assignment1"
+author: "Ronnie Deng"
+date: "April 16, 2017"
+output: 
+    html_document:
+        keep_md: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Loading and preprocessing the data
+```{r}
+mydata = read.csv("activity.csv") # read csv file
+```
+
+
+## What is mean total number of steps taken per day?
+
+```{r}
+aggregate.data.frame(mydata$steps,list(mydata$date), sum)
+
+```
+
+## What is the average daily activity pattern?
+
+
+
+## Imputing missing values
+
+
+
+## Are there differences in activity patterns between weekdays and weekends?:
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
