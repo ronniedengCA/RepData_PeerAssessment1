@@ -42,7 +42,6 @@ mean(mydatatotal$x, na.rm = TRUE)
 ## Including Plots
 
 ```{r echo=FALSE}
-plot(mydatatotal)
+plot(mydatatotal, main="Scatterplot of avarage number of steps taken across all days",xlab="Date", ylab="Average of total steps taken")
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
