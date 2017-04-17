@@ -26,12 +26,14 @@ aggregate.data.frame(mydata$steps,list(mydata$date), sum)
 
 ## What is the average daily activity pattern?
 
-
+```{r}
+mean(mydatatotal$x)
+```
 
 ## Imputing missing values
-
-
-
+```{r}
+mean(mydatatotal$x, na.rm = TRUE)
+```
 ## Are there differences in activity patterns between weekdays and weekends?:
 
 
